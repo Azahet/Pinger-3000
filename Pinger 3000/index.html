@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Pinger 3000</title>
+  </head>
+  <body>
+<div class="appbar">
+	<div class="appbar_control">
+	<div class="close"> </div>
+	<div class="small"> </div>	
+	</div>
+	<div class="text">Pinger 3000</div>
+</div>
+
+
+<div id="app">
+<canvas id="myChart" width="500" height="200"></canvas>
+<div class="number">
+    <h1><span id="value">0</span> <span class="name">ms</span></h1>
+    
+</div>
+</div>
+
+
+    <script>
+    const { NoChart,addData, removeData } =  require('./renderer.js')
+    </script>
+  </body>
+</html>
